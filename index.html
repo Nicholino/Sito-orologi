@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CrownTime: progetto scolastico di un catalogo Rolex creato con HTML e CSS.">
+  <title>CrownTime | Orologi Rolex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Nicholas Rubimarca: logo, menu, stile generale e footer -->
+  <header>
+    <div class="contenitore intestazione">
+      <a href="#home" class="logo">Crown<span>Time</span></a>
+      <nav aria-label="Navigazione principale">
+        <a href="#home">Home</a>
+        <a href="#catalogo">Catalogo</a>
+        <details class="menu-modelli">
+          <summary>Modelli Rolex ▾</summary>
+          <div class="voci-modelli">
+            <a href="#land-dweller">Land-Dweller</a>
+<a href="#day-date">Day-Date</a>
+<a href="#sky-dweller">Sky-Dweller</a>
+<a href="#lady-datejust">Lady-Datejust</a>
+<a href="#datejust">Datejust</a>
+<a href="#oyster-perpetual">Oyster Perpetual</a>
+<a href="#cosmograph-daytona">Cosmograph Daytona</a>
+<a href="#submariner">Submariner</a>
+<a href="#sea-dweller">Sea-Dweller</a>
+<a href="#deepsea">Deepsea</a>
+<a href="#gmt-master-ii">GMT-Master II</a>
+<a href="#yacht-master">Yacht-Master</a>
+<a href="#yacht-master-ii">Yacht-Master II</a>
+<a href="#explorer">Explorer</a>
+<a href="#explorer-ii">Explorer II</a>
+<a href="#air-king">Air-King</a>
+<a href="#1908">1908</a>
+<a href="#padellone">Padellone</a>
+          </div>
+        </details>
+        <a href="#carrello">Carrello</a>
+        <a href="#vendi">Vendi</a>
+        <a href="#accedi">Accedi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Gianmarco Bellian: homepage e animazioni CSS -->
+    <section class="hero" id="home">
+      <div class="contenitore hero-interno">
+        <div>
+          <p class="etichetta">OROLOGI DI LUSSO</p>
+          <h1>Il tuo tempo.<br>Il tuo stile.</h1>
+          <p>Benvenuto su CrownTime, un semplice catalogo dedicato alle collezioni Rolex.</p>
+          <a class="pulsante" href="#catalogo">Scopri gli orologi ↓</a>
+        </div>
+        <img class="hero-orologio" src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074870/rolexcom/094398bf1f99/collection/hub/watches-2026-submariner-hub-portrait" alt="Rolex Submariner">
+      </div>
+    </section>
+
+    <!-- Federico Grande: catalogo Rolex e collegamenti alle categorie -->
+    <section class="contenitore sezione" id="catalogo">
+      <p class="etichetta">LA COLLEZIONE</p>
+      <h2>Catalogo Rolex</h2>
+      <p class="descrizione-sezione">18 famiglie di modelli, divise per categoria. Clicca su un orologio per vedere la descrizione.</p>
+      <div class="categorie">
+        <a href="#classici">Classici</a>
+        <a href="#sportivi">Sportivi</a>
+        <a href="#perpetual">Perpetual</a>
+      </div>
+      <h3 id="classici">Classici</h3>
+      <div class="griglia"><details class="orologio" id="land-dweller">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074869/rolexcom/094398bf1f99/collection/hub/watches-2026-land-dweller-hub-portrait" alt="Rolex Land-Dweller" loading="lazy">
+    <span class="scheda-testo"><strong>Land-Dweller</strong><small>Design moderno e raffinato.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Il Rolex Land-Dweller unisce una linea moderna all’identità classica del marchio. È pensato per chi ama uno stile raffinato ma contemporaneo.</p>
+    <p><b>Caratteristica:</b> Design contemporaneo</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="day-date">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074858/rolexcom/094398bf1f99/collection/hub/watches-2026-day-date-hub-portrait" alt="Rolex Day-Date" loading="lazy">
+    <span class="scheda-testo"><strong>Day-Date</strong><small>Eleganza e prestigio.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Il Day-Date mostra sul quadrante sia il giorno della settimana sia la data. È uno dei modelli più eleganti e rappresentativi di Rolex.</p>
+    <p><b>Caratteristica:</b> Giorno e data</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="sky-dweller">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074867/rolexcom/094398bf1f99/collection/hub/watches-2026-sky-dweller-hub-portrait" alt="Rolex Sky-Dweller" loading="lazy">
+    <span class="scheda-testo"><strong>Sky-Dweller</strong><small>Ideale per chi viaggia.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Lo Sky-Dweller è dedicato a chi viaggia spesso. Permette di leggere due fusi orari e include un calendario annuale.</p>
+    <p><b>Caratteristica:</b> Due fusi orari</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="lady-datejust">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074866/rolexcom/094398bf1f99/collection/hub/watches-2026-lady-datejust-hub-portrait" alt="Rolex Lady-Datejust" loading="lazy">
+    <span class="scheda-testo"><strong>Lady-Datejust</strong><small>Uno stile delicato ed elegante.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Il Lady-Datejust è una versione elegante e compatta del classico Datejust. Si riconosce per le proporzioni delicate e la finestrella della data.</p>
+    <p><b>Caratteristica:</b> Data sul quadrante</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="datejust">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775147404/rolexcom/094398bf1f99/collection/hub/watches-2026-datejust-hub-portrait" alt="Rolex Datejust" loading="lazy">
+    <span class="scheda-testo"><strong>Datejust</strong><small>Un grande classico Rolex.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Il Datejust è uno dei grandi classici Rolex. Combina uno stile versatile con la visualizzazione della data.</p>
+    <p><b>Caratteristica:</b> Data sul quadrante</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="oyster-perpetual">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074864/rolexcom/094398bf1f99/collection/hub/watches-2026-oyster-perpetual-hub-portrait" alt="Rolex Oyster Perpetual" loading="lazy">
+    <span class="scheda-testo"><strong>Oyster Perpetual</strong><small>Semplice ed essenziale.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>L’Oyster Perpetual ha un design pulito e senza complicazioni aggiuntive. È una scelta ideale per chi preferisce uno stile essenziale.</p>
+    <p><b>Caratteristica:</b> Quadrante essenziale</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details></div>
+      <h3 id="sportivi">Sportivi e professionali</h3>
+      <div class="griglia"><details class="orologio" id="cosmograph-daytona">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074862/rolexcom/094398bf1f99/collection/hub/watches-2026-daytona-hub-portrait" alt="Rolex Cosmograph Daytona" loading="lazy">
+    <span class="scheda-testo"><strong>Cosmograph Daytona</strong><small>Il cronografo sportivo.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Il Cosmograph Daytona è un cronografo legato al mondo delle corse automobilistiche. Il suo quadrante comprende contatori per misurare il tempo.</p>
+    <p><b>Caratteristica:</b> Cronografo</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="submariner">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074870/rolexcom/094398bf1f99/collection/hub/watches-2026-submariner-hub-portrait" alt="Rolex Submariner" loading="lazy">
+    <span class="scheda-testo"><strong>Submariner</strong><small>Il famoso orologio subacqueo.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Il Submariner è un celebre orologio da immersione. Il suo design sportivo è diventato riconoscibile anche fuori dall’acqua.</p>
+    <p><b>Caratteristica:</b> Orologio subacqueo</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="sea-dweller">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074872/rolexcom/094398bf1f99/collection/hub/watches-2026-sea-dweller-hub-portrait" alt="Rolex Sea-Dweller" loading="lazy">
+    <span class="scheda-testo"><strong>Sea-Dweller</strong><small>Creato per le immersioni.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Il Sea-Dweller è progettato per l’uso professionale sott’acqua. Unisce resistenza e caratteristiche tecniche dedicate alle immersioni.</p>
+    <p><b>Caratteristica:</b> Immersioni professionali</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="deepsea">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074859/rolexcom/094398bf1f99/collection/hub/watches-2026-deepsea-hub-portrait" alt="Rolex Deepsea" loading="lazy">
+    <span class="scheda-testo"><strong>Deepsea</strong><small>Per le profondità estreme.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Il Deepsea è pensato per affrontare profondità estreme. Si distingue per la robustezza e l’impostazione tecnica.</p>
+    <p><b>Caratteristica:</b> Grandi profondità</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="gmt-master-ii">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074857/rolexcom/094398bf1f99/collection/hub/watches-2026-gmt-hub-portrait" alt="Rolex GMT-Master II" loading="lazy">
+    <span class="scheda-testo"><strong>GMT-Master II</strong><small>Due fusi orari sul polso.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Il GMT-Master II permette di seguire l’ora in diversi fusi orari. La lunetta bicolore è uno dei suoi elementi più riconoscibili.</p>
+    <p><b>Caratteristica:</b> Fusi orari</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="yacht-master">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074865/rolexcom/094398bf1f99/collection/hub/watches-2026-yacht-master-hub-portrait" alt="Rolex Yacht-Master" loading="lazy">
+    <span class="scheda-testo"><strong>Yacht-Master</strong><small>Ispirato al mondo della vela.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Lo Yacht-Master si ispira alla navigazione e al mondo della vela. Combina un aspetto sportivo con finiture eleganti.</p>
+    <p><b>Caratteristica:</b> Ispirazione nautica</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="yacht-master-ii">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074868/rolexcom/094398bf1f99/collection/hub/watches-2026-yacht-master-ii-hub-portrait" alt="Rolex Yacht-Master II" loading="lazy">
+    <span class="scheda-testo"><strong>Yacht-Master II</strong><small>Per gli appassionati di regate.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Lo Yacht-Master II nasce per le regate. È noto per la funzione di conto alla rovescia utile nelle partenze.</p>
+    <p><b>Caratteristica:</b> Conto alla rovescia</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="explorer">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074859/rolexcom/094398bf1f99/collection/hub/watches-2026-explorer-hub-portrait" alt="Rolex Explorer" loading="lazy">
+    <span class="scheda-testo"><strong>Explorer</strong><small>Pratico e resistente.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>L’Explorer richiama le grandi avventure e le spedizioni. Ha un quadrante semplice e immediato da leggere.</p>
+    <p><b>Caratteristica:</b> Esplorazione</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="explorer-ii">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074860/rolexcom/094398bf1f99/collection/hub/watches-2026-explorer-ii-hub-portrait" alt="Rolex Explorer II" loading="lazy">
+    <span class="scheda-testo"><strong>Explorer II</strong><small>Pensato per l'esplorazione.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>L’Explorer II è un orologio per esploratori e viaggiatori. La lancetta delle 24 ore è una delle sue caratteristiche distintive.</p>
+    <p><b>Caratteristica:</b> Indicazione 24 ore</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="air-king">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074861/rolexcom/094398bf1f99/collection/hub/watches-2026-air-king-hub-portrait" alt="Rolex Air-King" loading="lazy">
+    <span class="scheda-testo"><strong>Air-King</strong><small>Ispirato all'aviazione.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>L’Air-King rende omaggio ai pionieri dell’aviazione. Il quadrante dà risalto alla lettura dei minuti.</p>
+    <p><b>Caratteristica:</b> Ispirazione aeronautica</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details></div>
+      <h3 id="perpetual">Perpetual</h3>
+      <div class="griglia"><details class="orologio" id="1908">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1787241855/rolexcom/collection/hub/2026/collection-rolex-watches-classic-watches-1908-m52508-0008" alt="Rolex 1908" loading="lazy">
+    <span class="scheda-testo"><strong>1908</strong><small>Eleganza tradizionale.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Il 1908 celebra l’orologeria classica con linee sobrie e proporzioni eleganti. È pensato per chi apprezza uno stile tradizionale.</p>
+    <p><b>Caratteristica:</b> Eleganza classica</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details>
+<details class="orologio" id="padellone">
+  <summary>
+    <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1791289202/rolexcom/collection/hub/2026/collection-rolex-watches-classic-watches-perpetual-padellone" alt="Rolex Padellone" loading="lazy">
+    <span class="scheda-testo"><strong>Padellone</strong><small>Design classico e ricercato.</small><em>Scopri i dettagli +</em></span>
+  </summary>
+  <div class="scheda-dettagli">
+    <p>Il Padellone riprende lo spirito dell’orologeria tradizionale Rolex. Il suo carattere ricercato lo distingue nella collezione Perpetual.</p>
+    <p><b>Caratteristica:</b> Tradizione orologiera</p>
+    <a href="#scheda">Vai alla scheda esempio →</a>
+  </div>
+</details></div>
+    </section>
+
+    <!-- Daniele Mastromattei: scheda orologio e carrello -->
+    <section class="fascia" id="scheda">
+      <div class="contenitore">
+        <p class="etichetta">SCHEDA OROLOGIO</p>
+        <h2>Rolex Submariner</h2>
+        <div class="scheda-completa">
+          <img src="https://media.rolex.com/image/upload/q_auto:best/f_auto/c_limit,w_800/v1775074870/rolexcom/094398bf1f99/collection/hub/watches-2026-submariner-hub-portrait" alt="Dettaglio Rolex Submariner" loading="lazy">
+          <div>
+            <h3>Submariner</h3>
+            <p>Un modello sportivo famoso per il suo legame con il mondo delle immersioni.</p>
+            <p><b>Tipo:</b> orologio subacqueo</p>
+            <p><b>Movimento:</b> automatico</p>
+            <p><b>Venditore:</b> venditore dimostrativo</p>
+            <p class="prezzo">€ 11.750 <small>prezzo di esempio</small></p>
+            <a class="pulsante" href="#carrello">Vedi carrello di esempio ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenitore sezione" id="carrello">
+      <p class="etichetta">ACQUISTO DIMOSTRATIVO</p>
+      <h2>Carrello</h2>
+      <p class="descrizione-sezione">Esempio di riepilogo ordine. Non è possibile effettuare pagamenti reali.</p>
+      <div class="due-colonne">
+        <div class="riquadro">
+          <h3>Il tuo ordine</h3>
+          <p>Rolex Submariner <strong>€ 11.750</strong></p>
+          <p>Spedizione <strong>Gratuita</strong></p>
+          <p class="totale">Totale <strong>€ 11.750</strong></p>
+        </div>
+        <div class="riquadro">
+          <h3>Dati di spedizione</h3>
+          <label>Nome e cognome<input type="text" placeholder="Mario Rossi"></label>
+          <label>Indirizzo<input type="text" placeholder="Via Roma 10"></label>
+          <label>Metodo di pagamento<select><option>Carta (demo)</option><option>Bonifico (demo)</option></select></label>
+          <p class="nota">Modulo dimostrativo: nessun ordine viene inviato.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manuel Borgia: sezione vendita, accesso e prove finali -->
+    <section class="fascia" id="vendi">
+      <div class="contenitore">
+        <p class="etichetta">PER I VENDITORI</p>
+        <h2>Vendi un orologio</h2>
+        <p>Per mettere in vendita un orologio, basta seguire questi tre passaggi:</p>
+        <ol class="passaggi">
+          <li>Inserisci il modello dell'orologio.</li>
+          <li>Aggiungi il prezzo e una descrizione.</li>
+          <li>Controlla i dati prima della pubblicazione.</li>
+        </ol>
+        <div class="riquadro form-vendita">
+          <h3>Esempio di inserzione</h3>
+          <label>Modello<input type="text" placeholder="Es. Rolex Datejust"></label>
+          <label>Prezzo richiesto<input type="text" placeholder="Es. 8.000 €"></label>
+          <label>Descrizione<textarea rows="3" placeholder="Descrivi il tuo orologio"></textarea></label>
+          <p class="nota">Questa è una simulazione: l'inserzione non viene salvata.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenitore sezione" id="accedi">
+      <p class="etichetta">AREA UTENTE</p>
+      <h2>Accedi o registrati</h2>
+      <p class="descrizione-sezione">Esempio grafico dei moduli di accesso e registrazione.</p>
+      <div class="due-colonne">
+        <div class="riquadro">
+          <h3>Accedi</h3>
+          <label>Email<input type="email" placeholder="nome@email.it"></label>
+          <label>Password<input type="password" placeholder="Password"></label>
+          <p class="nota">Accesso non attivo nella versione HTML e CSS.</p>
+        </div>
+        <div class="riquadro">
+          <h3>Registrati</h3>
+          <label>Nome<input type="text" placeholder="Il tuo nome"></label>
+          <label>Email<input type="email" placeholder="nome@email.it"></label>
+          <label>Password<input type="password" placeholder="Crea una password"></label>
+          <p class="nota">Registrazione dimostrativa, senza salvataggio dei dati.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Nicholas Rubimarca: footer -->
+  <footer>
+    <div class="contenitore">
+      <strong>CrownTime</strong>
+      <p>Progetto scolastico non ufficiale dedicato agli orologi Rolex. Solo HTML e CSS.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* CrownTime: stile comune scelto da Nicholas, homepage e animazioni di Gianmarco */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; color: #1f3042; background: #fff; }
+.contenitore { width: 90%; max-width: 1120px; margin: auto; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3, h4, p { margin-top: 0; }
+h2 { font-size: 32px; }
+.etichetta { color: #a17b3d; font-size: 12px; font-weight: bold; letter-spacing: 2px; }
+.descrizione-sezione { color: #666; line-height: 1.7; }
+
+/* Nicholas: menu */
+header { background: #fff; border-bottom: 1px solid #e3dfd6; position: sticky; top: 0; z-index: 10; }
+.intestazione { min-height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 25px; }
+.logo { font-size: 28px; font-weight: bold; color: #1f3042; white-space: nowrap; }
+.logo span { color: #b18c51; }
+nav { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; font-size: 14px; }
+nav > a:hover { color: #b18c51; }
+.menu-modelli { position: relative; }
+.menu-modelli summary { cursor: pointer; list-style: none; color: #fff; background: #1f3042; padding: 10px 13px; border-radius: 3px; }
+.menu-modelli summary::-webkit-details-marker { display: none; }
+.voci-modelli { position: absolute; top: 41px; right: 0; background: #fff; width: 225px; max-height: 330px; overflow-y: auto; box-shadow: 0 8px 24px #0002; border: 1px solid #ddd; padding: 8px; }
+.voci-modelli a { display: block; padding: 9px; font-size: 13px; }
+.voci-modelli a:hover { background: #f4f0e7; }
+
+/* Gianmarco: homepage e due animazioni CSS leggere */
+.hero { background: #f4f0e7; }
+.hero-interno { min-height: 500px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 50px; padding: 50px 0; }
+.hero h1 { font-size: 54px; line-height: 1.1; margin-bottom: 24px; animation: compare 1s ease; }
+.hero p:not(.etichetta) { line-height: 1.8; color: #63707a; max-width: 450px; }
+.hero-orologio { width: 100%; height: 410px; object-fit: cover; border-radius: 5px; animation: galleggia 5s ease-in-out infinite; }
+.pulsante { display: inline-block; padding: 14px 22px; background: #1f3042; color: white; margin-top: 14px; border-radius: 3px; }
+.pulsante:hover { background: #344e66; }
+@keyframes compare { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes galleggia { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+/* Federico: catalogo */
+.sezione { padding: 70px 0; scroll-margin-top: 110px; }
+.categorie { display: flex; gap: 10px; margin: 28px 0 40px; flex-wrap: wrap; }
+.categorie a { border: 1px solid #c8c6c0; padding: 10px 16px; font-size: 13px; }
+.categorie a:hover { background: #f4f0e7; }
+.catalogo h3, #catalogo h3 { font-size: 24px; margin: 42px 0 22px; scroll-margin-top: 110px; }
+.griglia { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.orologio { border: 1px solid #e7e5e0; background: white; scroll-margin-top: 110px; }
+.orologio summary { cursor: pointer; list-style: none; }
+.orologio summary::-webkit-details-marker { display: none; }
+.orologio img { width: 100%; height: 245px; object-fit: cover; display: block; background: #edf0ed; }
+.scheda-testo { display: block; padding: 18px; }
+.scheda-testo strong { display: block; font-size: 20px; margin-bottom: 8px; }
+.scheda-testo small { display: block; color: #777; font-size: 13px; }
+.scheda-testo em { display: block; font-style: normal; color: #9c753a; font-size: 13px; margin-top: 16px; }
+.scheda-dettagli { padding: 0 18px 20px; line-height: 1.6; font-size: 14px; color: #59636b; }
+.scheda-dettagli a { color: #9c753a; font-weight: bold; }
+
+/* Daniele: scheda orologio e carrello */
+.fascia { background: #f4f0e7; padding: 65px 0; scroll-margin-top: 110px; }
+.scheda-completa { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.scheda-completa img { width: 100%; height: 410px; object-fit: cover; }
+.scheda-completa p { color: #57626b; line-height: 1.6; }
+.prezzo { font-size: 26px; color: #1f3042 !important; font-weight: bold; }
+.prezzo small { font-size: 12px; font-weight: normal; color: #777; }
+.due-colonne { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+.riquadro { padding: 26px; border: 1px solid #dedbd3; background: white; }
+.riquadro h3 { font-size: 21px; margin-bottom: 20px; }
+.riquadro > p:not(.nota) { display: flex; justify-content: space-between; gap: 15px; }
+.totale { border-top: 1px solid #ddd; padding-top: 15px; font-size: 20px; }
+.nota { font-size: 12px; color: #777; line-height: 1.5; }
+
+/* Manuel: vendita, accesso e moduli dimostrativi */
+.passaggi { line-height: 2; padding-left: 23px; }
+.form-vendita { max-width: 630px; margin-top: 22px; }
+label { display: block; font-size: 13px; font-weight: bold; margin-bottom: 14px; }
+input, select, textarea { display: block; width: 100%; margin-top: 7px; padding: 12px; font: inherit; border: 1px solid #c7c7c7; background: #fff; border-radius: 2px; }
+input:focus, select:focus, textarea:focus { outline: 2px solid #b18c51; }
+
+/* Nicholas: footer */
+footer { background: #1f3042; color: white; padding: 30px 0; font-size: 13px; }
+footer strong { font-size: 19px; }
+footer p { margin: 10px 0 0; color: #d2d6d9; }
+
+/* Manuel: adattamento a telefono e tablet */
+@media (max-width: 900px) {
+  .intestazione { flex-direction: column; padding: 18px 0; }
+  nav { justify-content: center; }
+  .griglia { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 650px) {
+  .hero-interno, .scheda-completa, .due-colonne { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 40px; }
+  .hero-orologio { height: 300px; }
+  .griglia { grid-template-columns: 1fr; }
+  .sezione { padding: 50px 0; }
+  .voci-modelli { right: -30px; }
+  .riquadro { padding: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; }
+}
