@@ -194,7 +194,7 @@ h2 {
 
 .dettaglio {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 10fr 10fr;
     align-items: center;
     gap: 35px;
 }
